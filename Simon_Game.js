@@ -11,10 +11,19 @@ document.addEventListener("keypress",function(){
     }
     levelUp()
 })
+//------GAME FLASH-------
 function btnflash(btn){
     btn.classList.add("flash")
     setTimeout(function(){
         btn.classList.remove("flash")
+    },150)
+
+}
+// --------USER FLASH--------
+function userflash(btn){
+    btn.classList.add("userflash")
+    setTimeout(function(){
+        btn.classList.remove("userflash")
     },150)
 
 }
@@ -31,4 +40,16 @@ function levelUp(){
 
     btnflash(randbtn)
 
+}
+
+function btnPress(){
+    // console.log("button is pressed")
+    console.log(this)
+    let btn=this
+    userflash(btn)
+}
+
+let allBtns=document.querySelectorAll(".btn")
+for(let btn of allBtns){
+    btn.addEventListener("click",btnPress)
 }
