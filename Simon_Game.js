@@ -95,9 +95,10 @@ for(let btn of allBtns){
 //<<<<<<<<<<------RESTART------->>>>>>>>>>
 
 function restart(){
-    userseq=[]
-    gameseq=[]
     started=false
+    gameseq=[]
+    userseq=[]
+    
     level=0
     
 }

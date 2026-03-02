@@ -32,7 +32,17 @@ li{
 
 
 /* ------------SIMON GAME-------- */
+h1:hover{
 
+     transform: scale(1.9);
+     text-shadow: 3px 3px 10px rgba(1, 16, 21, 0.714); 
+     /* glow effect */
+}
+
+h3{
+    font-size: 22px;
+    
+}
 body{
     text-align: center;
     
@@ -49,24 +59,48 @@ body{
     display: flex;
     justify-content: center;
     margin: auto;
-    height: 390px;
-    width: 420px;
+    height: 400px;
+    width: 440px;
     box-shadow: 2px 2px 10px black;
     border-radius: 100px;
     background-color: rgb(239, 198, 198);
     
 }
+/* .btn-container:hover{
+     transform: scale(100.5);
+     text-shadow: 3px 3px 10px rgba(1, 16, 21, 0.714); 
+     /* glow effect */
+/* } */ 
 .red{
     background-color: rgb(225, 100, 100);
+}
+.red:hover{
+     transform: scale(1.1);
+     text-shadow: 2px 2px 10px rgb(225, 100, 100);
+    
 }
 .green{
      background-color: rgb(130, 215, 130);
 }
+.green:hover{
+        transform: scale(1.1);
+         text-shadow: 2px 2px 10px rgb(130, 215, 130);
+}
 .yellow{
     background-color: rgb(238, 238, 122);
 }
+.yellow:hover{
+
+    transform: scale(1.1);
+     text-shadow: 2px 2px 10px rgb(238, 238, 122);
+}
 .blue{
     background-color: rgb(94, 94, 234);
+}
+.blue:hover{
+    transform: scale(1.1);
+     text-shadow: 2px 2px 10px rgb(94, 94, 234);
+
 }
 .flash{
     background-color: white;
