@@ -3,7 +3,7 @@ let userseq=[]
 let btns=["red","yellow","green","blue"]
 let started=false
 let level=0
-let h2=document.querySelector("h2")
+let h3=document.querySelector("h3")
 document.addEventListener("keypress",function(){
     if(started==false){
         console.log("game is started")
@@ -35,8 +35,8 @@ function userflash(btn){
 function levelUp(){
     userseq=[]
     level++
-    h2.innerHTML=`level ${level}`
-    let randIdx=Math.floor(Math.random()*3)
+    h3.innerText=`level ${level}`
+    let randIdx=Math.floor(Math.random()*4)
     let randcolor=btns[randIdx]
     let randbtn=document.querySelector(`.${randcolor}`)
     // console.log(randIdx)
@@ -56,11 +56,16 @@ function checkAns(idx){
             setTimeout(levelUp,1000)
         }
     }else{
-        h2.innerHTML=`game over! Your score was  <b>${level}</b> </br> press any key to start `
+        h3.innerHTML=`GAME OVER! Your score was  <b>${level}</b> </br> press any key to start `
        document.querySelector("body").style.backgroundColor="red"
        setTimeout(function(){
          document.querySelector("body").style.backgroundColor="white"
        },150)
+        let allBtns = document.querySelectorAll(".btn");
+    allBtns.forEach(btn => {
+        btn.classList.remove("flash");
+        btn.classList.remove("userflash");
+    });
         restart()
     }    
 
@@ -94,5 +99,6 @@ function restart(){
     gameseq=[]
     started=false
     level=0
+    
 }
 
