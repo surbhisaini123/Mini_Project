@@ -32,19 +32,24 @@ li{
 
 
 /* ------------SIMON GAME-------- */
+h1{
+    color: black;
+}
 h1:hover{
 
      transform: scale(1.9);
-     text-shadow: 3px 3px 10px rgba(1, 16, 21, 0.714); 
+     text-shadow: 3px 3px 10px  rgba(255, 249, 249, 0.714); 
      /* glow effect */
 }
 
 h3{
-    font-size: 22px;
-    
+    font-size: 23px;
+    color:white;
+    text-shadow: 3px 3px 10px  rgba(255, 249, 249, 0.714); 
 }
 body{
     text-align: center;
+    background-color: rgba(30, 77, 99, 0.885);
     
 }
 .btn{
@@ -61,16 +66,13 @@ body{
     margin: auto;
     height: 400px;
     width: 440px;
-    box-shadow: 2px 2px 10px black;
+    box-shadow: 2.5px 2.5px 10px rgb(255, 248, 248);
     border-radius: 100px;
     background-color: rgb(239, 198, 198);
     
 }
-/* .btn-container:hover{
-     transform: scale(100.5);
-     text-shadow: 3px 3px 10px rgba(1, 16, 21, 0.714); 
-     /* glow effect */
-/* } */ 
+
+
 .red{
     background-color: rgb(225, 100, 100);
 }

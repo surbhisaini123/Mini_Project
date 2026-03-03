@@ -59,8 +59,8 @@ function checkAns(idx){
         h3.innerHTML=`GAME OVER! Your score was  <b>${level}</b> </br> press any key to start `
        document.querySelector("body").style.backgroundColor="red"
        setTimeout(function(){
-         document.querySelector("body").style.backgroundColor="white"
-       },150)
+         document.querySelector("body").style.backgroundColor="rgba(30, 77, 99, 0.885)"
+       },200)
         let allBtns = document.querySelectorAll(".btn");
     allBtns.forEach(btn => {
         btn.classList.remove("flash");
